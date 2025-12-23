@@ -1,12 +1,12 @@
-CIFAR-10 Image Classification with CNNs in PyTorch
+#CIFAR-10 Image Classification with CNNs in PyTorch
 
 This project demonstrates how to build, train, and evaluate a Convolutional Neural Network (CNN) for classifying images from the CIFAR-10 dataset using PyTorch.
 
-#About
+##About
 
 CIFAR-10 is a widely used dataset for image classification, consisting of 60,000 32x32 color images in 10 classes, with 6,000 images per class. This project implements a CNN to learn meaningful features from these images and predict their class.
 
-#Dataset
+##Dataset
 
 The dataset can be automatically downloaded using torchvision.datasets.CIFAR10. It includes:
 
@@ -14,7 +14,7 @@ The dataset can be automatically downloaded using torchvision.datasets.CIFAR10. 
 
 50,000 training images and 10,000 test images.
 
-#Model Architecture
+##Model Architecture
 
 The CNN model consists of:
 
