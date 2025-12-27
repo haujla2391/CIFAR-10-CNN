@@ -11,7 +11,7 @@ class Model(nn.Module):
         self.flatten = nn.Flatten()
         self.lin1 = nn.Linear(64 * 8 * 8, 256)
         self.lin2 = nn.Linear(256, 10)
-        self.dropout = nn.Dropout2d(p=0.5)
+        self.dropout = nn.Dropout(p=0.5)
 
     def forward(self, x):
         x = self.conv1(x)
@@ -35,7 +35,8 @@ class Model(nn.Module):
 # the RGB color channel is 3 matrices stacked on each other
 # The convultion layer takes the 3 by 3 kernel and slides with a stride of 1 and outputs a feature map. Does 32 of these.
 # The activation function is ReLU so the network doesn't collapse to a linear function
-# Max pooling takes the max value in the kernel and puts it into new feature matrix. It downsizes feature map with most important parts.
+# Max pooling takes the max value in the kernel and puts it into new feature matrix. It downsizes feature map with most important parts. 
+# no overlapping values in this pool
 # The linear layers produce the logits after flattening the feature maps. 
 # For Regularization, we can do Dropout which randomly disables neurons during training to prevent overfitting
 
