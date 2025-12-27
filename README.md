@@ -10,3 +10,5 @@ The CNN model consists of:
 - **Max pooling layers** for downsampling  
 - **Fully connected layers** for classification  
 - **Dropout layers** to reduce overfitting  
+
+## Current Accuracy: 73%
